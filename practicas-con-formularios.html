@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Prueba</title>
+    <link rel="icon" type="image/png" href="/Imagenes/Icono de formulario.png" sizes="16x16">
+    <link rel="stylesheet" href="/css/estilo2.css">
+</head>
+<body class="fondo">
+    <div class="texto">
+        <h1>Encuesta de vivienda</h1>
+    </div>
+    <form action="malito:rubenalexito@gmail.com" method="post" enctype="text/plain">
+        <!--Si queremos que el formulario se procese automáticamente por un programa, generalmente no
+        utilizaremos el ultimo atributo mencionado, de modo que tome su valor por defecto, es decir, no debemos 
+        incluir "enctype" dentro de la etiqueta FORM.-->
+        <p class="texto">Es importante llenar los campos que tengan el "<span class="texto-rojo">*</span>"</p>
+        <div>
+            <label for="campo1">Nombre: <span class="texto-rojo">*</span></label>
+            <input type="text" name="Nombre" maxlength="20" size="20" placeholder="Ingrese Su Nombre" value="ingrese su nombre">
+            <!--"maxlenght": define el limite de caracteres a poner en el campo de texto
+                "size": establece el tamaño del campo donde introduciremos el texto
+                "placeholder": Un mensaje dentro del campo donde le indica al usuario que ingresar-->
+        </div>
+        <div>
+            <label for="como-es-su-casa">¿Como es su casa?:</label>
+            <textarea name="como-es-su-casa" id="10" cols="30" rows="10">Escribe tu descripcion</textarea>
+        </div>
+        <div>
+            <label for="barrio-donde-vives">Barrio donde vives:</label>
+            <select name="barrio" id="5" size="2" multiple>
+                <option>Bajo flores</option>
+                <option>Palermo</option>
+                <option>Villa Soldati</option>
+                <option>Mataderos</option>
+            </select>
+        </div>
+        <div>
+            <label for="provincia-en-la-que-vives">Provincia en la que vives:</label>
+            <select name="Provincia" id="4">
+                <option value="1">Jujuy</option>
+                <option value="2" selected>Buenos Aires</option>
+                <option value="3">Catamarca</option>
+            </select>
+        </div>
+        <div>
+            <div><input type="radio" name="bolivia" value="1"></div>
+            <div><input type="radio" name="argentina" value="2"></div>
+            <div><input type="radio" name="peru" value="3"></div>
+            <div><input type="radio" name="paraguay" value="4"></div>
+        </div>
+    </form>
+
+</body>
+</html>
