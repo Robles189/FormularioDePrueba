@@ -18,39 +18,76 @@
         <p class="texto">Es importante llenar los campos que tengan el "<span class="texto-rojo">*</span>"</p>
         <div>
             <label for="campo1">Nombre: <span class="texto-rojo">*</span></label>
-            <input type="text" name="Nombre" maxlength="20" size="20" placeholder="Ingrese Su Nombre" value="ingrese su nombre">
+            <input type="text" name="Nombre" maxlength="20" size="20" placeholder="Ingrese Su Nombre">
             <!--"maxlenght": define el limite de caracteres a poner en el campo de texto
                 "size": establece el tamaño del campo donde introduciremos el texto
                 "placeholder": Un mensaje dentro del campo donde le indica al usuario que ingresar-->
         </div>
-        <div>
-            <label for="como-es-su-casa">¿Como es su casa?:</label>
-            <textarea name="como-es-su-casa" id="10" cols="30" rows="10">Escribe tu descripcion</textarea>
+        <div class="margen">
+            <section>
+                <article>
+                    <label for="barrio-donde-vives">Barrio donde vives:<span class="texto-rojo">*</span></label>
+                </article>
+                <article>
+                    <select name="barrio" id="5" size="2" multiple>
+                        <option>Bajo flores</option>
+                        <option>Palermo</option>
+                        <option>Villa Soldati</option>
+                        <option>Mataderos</option>
+                    </select>
+                </article>
+            </section>   
         </div>
-        <div>
-            <label for="barrio-donde-vives">Barrio donde vives:</label>
-            <select name="barrio" id="5" size="2" multiple>
-                <option>Bajo flores</option>
-                <option>Palermo</option>
-                <option>Villa Soldati</option>
-                <option>Mataderos</option>
-            </select>
-        </div>
-        <div>
-            <label for="provincia-en-la-que-vives">Provincia en la que vives:</label>
+        <div class="margen">
+            <label for="provincia-en-la-que-vives">Provincia en la que vives:<span class="texto-rojo">*</span></label>
             <select name="Provincia" id="4">
                 <option value="1">Jujuy</option>
                 <option value="2" selected>Buenos Aires</option>
                 <option value="3">Catamarca</option>
             </select>
         </div>
+        <div class="margen">
+            <section>
+                <article>
+                    <label for="que-pais">Pais de residencia:<span class="texto-rojo">*</span></label>
+                </article>
+                <article>
+                    <div><input type="radio" name="paises" value="seleccione-una-opcion" checked>Seleccione una opcion</div>
+                    <div><input type="radio" name="paises" value="bolivia">bolivia</div>
+                    <div><input type="radio" name="paises" value="argentina">argentina</div>
+                    <div><input type="radio" name="paises" value="peru">peru</div>
+                    <div><input type="radio" name="paises" value="paraguay">paraguay</div>
+                </article>
+            </section>
+        </div>
+        <div class="margen">
+            <section>
+                <article>
+                    <label for="como-es-su-casa">¿Como es su casa?:</label>
+                </article>
+                <article>
+                    <textarea name="como-es-su-casa" id="10" cols="30" rows="10" placeholder="Describa su casa"></textarea>
+                </article>
+            </section>
+        </div>
         <div>
-            <div><input type="radio" name="bolivia" value="1">bolivia</div>
-            <div><input type="radio" name="argentina" value="2">argentina</div>
-            <div><input type="radio" name="peru" value="3">peru</div>
-            <div><input type="radio" name="paraguay" value="4">paraguay</div>
+            <section>
+                <article>
+                    <label for="pasatiempos">¿Cuales son sus pasatiempos?:</label>
+                </article>
+                <article>
+                    <div><input type="checkbox" name="pasatiempos" id="1">Leer</div>
+                    <div><input type="checkbox" name="pasatiempos" id="2">Estudiar</div>
+                    <div><input type="checkbox" name="pasatiempos" id="3">Jugar Videojuegos</div>
+                    <div><input type="checkbox" name="pasatiempos" id="4">Jugar a la pelota</div>
+                    <div><input type="checkbox" name="pasatiempos" id="5">Ver peliculas-series</div>
+                    <div><input type="checkbox" name="pasatiempos" id="6">Ir al parque</div>
+                    <div><input type="checkbox" name="pasatiempos" id="7">Jugar con la mascota</div>
+                    <div><input type="checkbox" name="pasatiempos" id="8">Visitar Lugares</div>
+                    <div><input type="checkbox" name="pasatiempos" id="9">Otro</div>
+                </article>
+            </section>
         </div>
     </form>
-
 </body>
 </html>

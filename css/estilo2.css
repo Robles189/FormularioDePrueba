@@ -24,10 +24,21 @@
 
 textarea{
 
-    margin-top: 10px;
+    margin-top: 0px;
 
 }
 select{
+
+    margin-top: 0px;
+
+}
+section{
+
+    display: flex;
+
+}
+
+.margen{
 
     margin-top: 10px;
 
