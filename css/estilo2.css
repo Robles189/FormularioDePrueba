@@ -24,6 +24,7 @@
 
 textarea{
 
+    resize: none;
     margin-top: 0px;
 
 }
@@ -42,4 +43,60 @@ section{
 
     margin-top: 10px;
 
+}
+
+.margen-izquierdo{
+
+    margin-left: 50px;
+
+}
+.margen-izquierdo2{
+
+    margin-left: 10px;
+
+}
+.boton-ampliado2 {
+    margin-top: 0px;
+    width: 150px; /* Ancho del botón */
+    height: 75px; /* Alto del botón */
+    font-size: 16px; /* Tamaño de la fuente */
+    padding: 10px; /* Espacio interno del botón */
+    background-color: rgb(8, 221, 150);
+}
+
+.boton-ampliado {
+    margin-top: 50px;
+    width: 250px; /* Ancho del botón */
+    height: 125px; /* Alto del botón */
+    font-size: 16px; /* Tamaño de la fuente */
+    padding: 10px; /* Espacio interno del botón */
+    background-color: rgb(8, 221, 150);
+}
+input[type="submit"]:hover {
+    background-color: #3feb48; /* Nuevo color de fondo */
+}
+/* Cambiar color del botón al hacer clic */
+input[type="submit"]:active {
+    background-color: #00ff08; /* Restaurar color de fondo normal */
+}
+input[type="submit"]{
+    font-size: 25px;
+}
+input[type="reset"]{
+    font-size: 25px;
+}
+input[type="reset"]:hover {
+    background-color: #3feb48;
+}
+input[type="reset"]:active {
+    background-color: #00ff08; /* Restaurar color de fondo normal */
+}
+input[type="button"]{
+    font-size: 12px;
+}
+input[type="button"]:hover {
+    background-color: #3feb48;
+}
+input[type="button"]:active {
+    background-color: #00ff08; /* Restaurar color de fondo normal */
 }
